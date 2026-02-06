@@ -16,7 +16,7 @@
 }
     .topdiv {
       position: relative;
-      width:50%;
+      width:75%;
       height:50px;
       background-color:white;
       display:flex;
@@ -51,7 +51,7 @@
         display:flex;
         position:absolute;
         right:15px;
-        transform:transformX(-50%);
+        
          
 }
 
@@ -71,8 +71,8 @@
   
 <div class="logindiv" >
   <ul>
-    <li><button>登陆</button></li>
-    <a href="#" style="font-size:5px;">还没账号?点我注册</a>
+    <li><button style="width:50px" onclick="alert("测试");">登陆</button></li>
+    <a href="#" style="font-size:10px;">还没账号?点我注册</a>
   </ul>
 
 </div>
