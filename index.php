@@ -29,13 +29,16 @@
     .topdiv ul{
       display:flex;
       justify-content:center;
-      
+      align-items:center;
 }
      .topdiv ul li {
-        font-size:35px;
+        font-size:25px;
         color:gray;
+        
 }
-
+      .topdiv ul li a{
+        text-decoration:none;
+}    
 </style>
 
 </head>
@@ -45,7 +48,7 @@
   <div class="topdiv">
     <ul>
     <li> <a href="#">首页</a></li>
-    <li><a href="#">学校大事</a></li>
+    <li><a href="#">学校新闻</a></li>
     </ul> 
   </div>
 </body>
