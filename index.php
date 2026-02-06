@@ -49,6 +49,7 @@
     <ul>
     <li> <a href="#">首页</a></li>
     <li><a href="#">学校新闻</a></li>
+    <li><a href="#">教师名片</a></li>
     </ul> 
   </div>
 </body>
