@@ -51,16 +51,41 @@
         display:flex;
         position:absolute;
         right:15px;
-        
          
+          
+}
+        .logodiv{
+            position:fixed;
+            height:50px;
+            width:100px;
+            background-color:red;
+}
+         .userheaddiv{
+            position:fixed;
+            height:50px;
+            width:125px;
+            background-color:red;
+            right:0px;
+            top:0px;
+}
+          .userheaddiv ul{
+              display:flex;
+              justify-content:center;
+}
+          .userheaddiv ul li{
+            float:left;
+            margin-left:5px;
 }
 
 </style>
-
+  <title>wangdaopage</title>
+  <meta charset="utf-8">
 </head>
 
 <body>
-  
+  <div class="logodiv">
+    <p>logo</p>  
+</div>
   <div class="topdiv">
     <ul>
     <li> <a href="#">首页</a></li>
@@ -79,5 +104,12 @@
    
 </div>
 </div>
+  <div class="userheaddiv">
+    <ul>
+      <li><p>username</p></li>
+      <li>img</li>
+    </ul>
+  </div>
+
 </body>
 </html>
