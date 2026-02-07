@@ -77,6 +77,14 @@
             margin-left:5px;
 }
 
+.worddiv {
+   width:600px;
+   height:450px;
+   background-color:white; 
+   margin:20px auto;
+   
+}
+
 </style>
   <title>wangdaopage</title>
   <meta charset="utf-8">
@@ -96,7 +104,7 @@
   
 <div class="logindiv" >
   <ul>
-    <li><button style="width:50px" onclick="alert("测试");">登陆</button></li>
+    <li><button style="width:50px" onclick="alert('测试');">登陆</button></li>
     <a href="#" style="font-size:10px;">还没账号?点我注册</a>
   </ul>
 
@@ -110,6 +118,6 @@
       <li>img</li>
     </ul>
   </div>
-
+<div class="worddiv"></div>
 </body>
 </html>
