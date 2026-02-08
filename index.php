@@ -2,7 +2,14 @@
 <html>
 <head>
   <style>
-    *{
+    html{
+      width:800px;
+      height:600px;
+      margin:0 auto;
+      
+}    
+
+*{
       
       padding:0;
       margin:0;
@@ -104,7 +111,7 @@
   
 <div class="logindiv" >
   <ul>
-    <li><button style="width:50px" onclick="alert('测试');">登陆</button></li>
+    <li><button style="width:50px" onclick="window.location.href='login.html'">登陆</button></li>
     <a href="#" style="font-size:10px;">还没账号?点我注册</a>
   </ul>
 
