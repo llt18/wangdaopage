@@ -65,13 +65,13 @@
             position:fixed;
             height:50px;
             width:100px;
-            background-color:red;
+            background-color:white;
 }
          .userheaddiv{
             position:fixed;
             height:50px;
             width:125px;
-            background-color:red;
+            background-color:white;
             right:0px;
             top:0px;
 }
@@ -121,7 +121,15 @@
 </div>
   <div class="userheaddiv">
     <ul>
-      <li><p>username</p></li>
+    <li><?php 
+   if(isset($_POST["username"])&&$_POST["password"]=="11451418Zz"&& $_POST["username"]=="admin")
+   {
+   echo "<p>" . $_POST["username"] . "</p>";
+   }else{
+	   
+	   echo "<p>" . "密码错误或未登录" . "</p>";
+   }
+?></li>
       <li>img</li>
     </ul>
   </div>
