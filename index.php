@@ -125,12 +125,13 @@
    if(isset($_POST["username"])&&$_POST["password"]=="11451418Zz"&& $_POST["username"]=="admin")
    {
    echo "<p>" . $_POST["username"] . "</p>";
+   echo "<script>alert('你已登陆管理员');</script>";
+   
    }else{
 	   
 	   echo "<p>" . "密码错误或未登录" . "</p>";
    }
-?></li>
-      <li>img</li>
+?>
     </ul>
   </div>
 <div class="worddiv">
