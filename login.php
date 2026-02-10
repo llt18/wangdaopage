@@ -16,7 +16,7 @@ session_start();
        $data='WANGDAOUSER';
        $conn=new mysqli($host,$user,$pass,$data);
        if($conn->connect_error<0){
-         die("connect error",$conn->connect_error);
+         die("connect error" . $conn->connect_error);
        }
        $username=$conn->real_escape_string($username);
        //$password=$conn->real_escape_string($password);
@@ -26,7 +26,7 @@ session_start();
        if($result->num_rows>0){
           $row=$result->fetch_assoc();
           if($username == $row['NAME'] && $password == $row['PASSWORD']){
-            $_SESSION["islogin"]=false;
+            $_SESSION["islogin"]=true;
             $_SESSION["username"]=$username;$_SESSION["password"]=$password;
             echo "<script>alert('login successfuly');window.location.href='index.php';</script>";
           }else{
@@ -35,8 +35,7 @@ session_start();
        }else{
          $_SESSION["islogin"]=false;
          
-echo "<script>alert('login error!');
-          </script>";
+echo "<script>alert('login error!');</script>";
        }
        $conn->close();
 
