@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+  
 ?>
 <!DOCTYPE html>
 <html>
@@ -126,12 +126,16 @@ session_start();
   <div class="userheaddiv">
     <ul>
     <li><?php 
-     
+    if(isset($_SESSION["islogin"])){ 
      if($_SESSION["islogin"]==true){
        echo "<p>" . $_SESSION["username"] . "</p>";
      }else{
        echo "nologin";
      }
+     }else{
+       echo "nologin";
+     }
+
 ?>
    
 </ul>

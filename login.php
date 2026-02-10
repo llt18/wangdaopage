@@ -36,7 +36,7 @@ session_start();
          $_SESSION["islogin"]=false;
          
 echo "<script>alert('login error!');
-         history.back();</script>";
+          </script>";
        }
        $conn->close();
 
