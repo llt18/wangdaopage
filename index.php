@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -122,17 +126,15 @@
   <div class="userheaddiv">
     <ul>
     <li><?php 
-   if(isset($_POST["username"])&&$_POST["password"]=="11451418Zz"&& $_POST["username"]=="admin")
-   {
-   echo "<p>" . $_POST["username"] . "</p>";
-   echo "<script>alert('你已登陆管理员');</script>";
-   
-   }else{
-	   
-	   echo "<p>" . "密码错误或未登录" . "</p>";
-   }
+     
+     if($_SESSION["islogin"]==true){
+       echo "<p>" . $_SESSION["username"] . "</p>";
+     }else{
+       echo "nologin";
+     }
 ?>
-    </ul>
+   
+</ul>
   </div>
 <div class="worddiv">
 <h1 style="text-align:center;">学校简介</h1>
